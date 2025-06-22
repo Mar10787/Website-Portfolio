@@ -1,0 +1,51 @@
+/* Basic styling for ThemeToggle component */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+.theme-toggle__icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle__text {
+  font-weight: 500;
+}
+
+/* TODO: Add theme-specific styles */
+/* You can implement these based on your design preferences */
+
+/* Dark mode styles - apply these when data-theme="dark" is on document root */
+[data-theme="dark"] .theme-toggle {
+  border-color: #555;
+  color: #fff;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Light mode styles */
+[data-theme="light"] .theme-toggle {
+  border-color: #ccc;
+  color: #333;
+}
