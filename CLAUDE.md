@@ -42,10 +42,10 @@ The project follows an Agile development approach with components broken down in
 
 **Priority 1 (Foundation)**:
 - Theme Toggle (dark/light mode) - Done
-- Location Component (static display)
+- Location Component (static display) - Could do in Priority 2
 - Project Card (reusable layout)
-- Header (title, subtitle, social media icons)
-- Footer (contact integration section)
+- Header (title, subtitle, social media icons) - Done
+- Footer (contact integration section) - Done
 
 **Priority 2 (Core Features)**:
 - Contact Section (form with name, email, message)
