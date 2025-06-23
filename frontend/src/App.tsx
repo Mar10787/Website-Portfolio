@@ -2,17 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { ThemeProvider } from './contexts/ThemeContext';
-import ThemeToggle from './components/ThemeToggle';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <ThemeProvider>
       <div className="App">
+        <Header />
         <header className="App-header">
-          {/* TODO: Position the theme toggle where you want it */}
-          <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
-            <ThemeToggle />
-          </div>
           
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -27,6 +25,7 @@ function App() {
             Learn React
           </a>
         </header>
+        <Footer />
       </div>
     </ThemeProvider>
   );

@@ -1,0 +1,105 @@
+.portfolio-header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  background-color: var(--header-color);
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.header-left img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.linkedin-logo{
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.header-left img:hover {
+  opacity: 0.7;
+}
+
+.header-middle {
+  text-align: center;
+  flex: 1;
+}
+
+.header-middle h1 {
+  margin: 0 0 8px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.header-middle p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #FFFFFF !important;
+  opacity: 0.8;
+}
+
+.header-right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  min-width: 250px;
+}
+
+.search-container input {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.search-container input::placeholder {
+  color: var(--text-accent);
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .portfolio-header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+  
+  .header-middle {
+    order: -1;
+  }
+  
+  .search-container {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
