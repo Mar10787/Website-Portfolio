@@ -41,7 +41,7 @@ npm run eject
 The project follows an Agile development approach with components broken down into 4 priority levels:
 
 **Priority 1 (Foundation)**:
-- Theme Toggle (dark/light mode)
+- Theme Toggle (dark/light mode) - Done
 - Location Component (static display)
 - Project Card (reusable layout)
 - Header (title, subtitle, social media icons)
