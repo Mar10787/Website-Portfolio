@@ -1,0 +1,77 @@
+.project-card {
+    background: linear-gradient(180deg, #8FAD88 0%, #B0B0B0 100%);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.project-header {
+    margin-bottom: 20px;
+}
+
+.project-name {
+    color: #2c3e2c;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.project-section {
+    margin-bottom: 20px;
+}
+
+.project-section:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
+    color: #2c3e2c;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+}
+
+.section-content {
+    color: #4a5a4a;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.experiences-list {
+    color: #4a5a4a;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.experiences-list li {
+    margin-bottom: 4px;
+}
+
+.experiences-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .project-card {
+    background: linear-gradient(135deg, #6b7a6b 0%, #5a695a 50%, #4a574a 100%);
+}
+
+[data-theme="dark"] .project-name {
+    color: #e8f0e8;
+}
+
+[data-theme="dark"] .section-title {
+    color: #d0dcd0;
+}
+
+[data-theme="dark"] .section-content,
+[data-theme="dark"] .experiences-list {
+    color: #b8c8b8;
+}
