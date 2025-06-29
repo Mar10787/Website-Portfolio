@@ -11,7 +11,7 @@ function App() {
     <ThemeProvider>
       <div className="App">
         <Header />
-<main className="main-content">
+        <main className="main-content">
           <div className="Gallery">
           <Projects 
             name="Project 1"
