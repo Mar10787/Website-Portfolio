@@ -2,8 +2,15 @@
   text-align: center;
 }
 
+.main-content {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .Gallery {
-  margin:auto;
+  margin: auto;
 }
 
 [data-theme="dark"] .App-header {
@@ -20,6 +27,8 @@
   --text-primary: #2D3748;
   --text-secondary: #FFFFFF;
   --text-accent: #1ABC9C;
+  --header-height: 80px;
+  --footer-height: 60px;
 }
 
 [data-theme="dark"] {
